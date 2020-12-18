@@ -1,0 +1,5 @@
+Browser -> server: HTTPS POST https://studies.cs.helsinki.fi/exampleapp/new-note
+form data is sent from browser to the server with submit method
+Server --> browser: redirect
+Server instruct the browser to reload the page with redirect
+
