@@ -1,0 +1,2 @@
+Browser -> HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Note is send to the server with the form submit and the server redirect browser to render the note.
