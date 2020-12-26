@@ -1,0 +1,4 @@
+Browser -> server HTTP get https://studies.cs.helsinki.fi/exampleapp/spa
+Server --> browser HTML-code
+SPA style applications only fatch an html page from the server.  
+Browser genetrated html code for exiting notes, the content of the html page is executed by the browser.
