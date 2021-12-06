@@ -1,5 +1,31 @@
+#Form data is sent from browser to the server's new-note adress with HTTPS Post resquest
 Browser -> server: HTTPS POST https://studies.cs.helsinki.fi/exampleapp/new-note
-form data is sent from browser to the server with submit method
-Server --> browser: redirect
-Server instruct the browser to reload the page with redirect
 
+#Server replies with redirect status code (302) asking the browser to send a new HTTPS Get request to the address https://studies.cs.helsinki.fi/exampleap/note
+Server -> browser: redirect
+
+#Browser send a new Get request to https://studies.cs.helsinki.fi/exampleapp/notes
+Browser -> server: HTTPS GET https://studies.cs.helsinki.fi/exampleapp/notes
+
+#Server sends the HTML-code (note.html) back to the browser
+Server -> browser https://studies.cs.helsinki.fi/exampleapp/notes 
+
+#The css link in the html file asks browser to make a new Get request for main.css (style sheet)
+Browser -> server HTTPS GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+#Server sends the main.css
+Server -> browser https://studies.cs.helsinki.fi/exampleapp/main.css
+
+#The js link in the html causes the browser to send a new Get request for the main.js file
+Browser -> server Get https://studies.cs.helsinki.fi/exampleapp/main.js
+
+#Server sends the main.js
+Server -> browser https://studies.cs.helsinki.fi/exampleapp/main.js
+
+#When browser executes main.js the file causes the browser to make a new request for data.json file
+Browser -> server Get https://studies.cs.helsinki.fi/exampleapp/main.json
+
+#Server send the content of the file
+Server -> Browser [{.........}, {.........}....]
+
+#Browser responds to event handle and renders the sent data on the screen
