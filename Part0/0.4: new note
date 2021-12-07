@@ -1,4 +1,4 @@
-#Form data is sent from browser to the server's new-note adress with HTTPS Post resquest
+#Form data is sent from browser to the server's new-note adress with HTTPS Post request
 Browser -> server: HTTPS POST https://studies.cs.helsinki.fi/exampleapp/new-note
 
 #Server replies with redirect status code (302) asking the browser to send a new HTTPS Get request to the address https://studies.cs.helsinki.fi/exampleap/note
