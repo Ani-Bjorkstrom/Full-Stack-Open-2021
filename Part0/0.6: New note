@@ -1,5 +1,5 @@
 #Browser parse the js code that adds the new note in the notes array and send the new note to the server asking for /new_note_spa
 Browser -> HTTPS POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
 
-#Server replies that the request has succeeded and has led to the creation of a resource and send /new_note_spa
+#Server replies that the request has succeeded and has led to the creation of a resource and sends the new note in a json file
 Server -> Browser https://studies.cs.helsinki.fi/exampleapp/new_note_spa.js
